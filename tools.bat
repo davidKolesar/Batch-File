@@ -19,9 +19,16 @@ if %input%==1 goto :Option 1
 if %input%==2 goto :Exit
 
 :Option 1
-echo option 1
-notepad.exe
-goto : Start
+echo Generating File
+>information.txt (
+echo Computer Name :
+hostname
+echo System Information:
+systeminfo 
+echo Network Properties : 
+ipconfig /all
+)
+goto :Start
 
 
 :Exit
