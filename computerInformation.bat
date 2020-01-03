@@ -23,7 +23,7 @@ if %input%==3 goto :Exit
 
 :Option 1
 echo Generating File
->information.txt (
+>systemInformation.txt (
 echo Computer Name :
 hostname
 echo System Information:
@@ -38,6 +38,7 @@ echo %DATE%
 echo Time: 
 echo %TIME%
 )
+cls
 goto :Program Options
 
 :Option 2
