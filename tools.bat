@@ -3,13 +3,13 @@ title Scrub Tools
 
 cls
 echo ***********************************************************
-echo WINDOWS 10 SCRUB
+echo Generate System Information
 echo David Kolesar
 echo ***********************************************************
 echo .  
 echo Select Option By Number:
 echo.
-echo 1) Option
+echo 1) Generate System Information
 echo 2) Exit
 
 :Start
@@ -27,6 +27,10 @@ echo System Information:
 systeminfo 
 echo Network Properties : 
 ipconfig /all
+echo Date:
+date
+echo Time: 
+time
 )
 goto :Start
 
