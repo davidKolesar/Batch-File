@@ -16,7 +16,7 @@ echo 2) Exit
 set input=
 set /p input= Choice:
 if %input%==1 goto :Option 1
-if %input%==2 goto: Exit
+if %input%==2 goto :Exit
 
 :Option 1
 echo option 1
