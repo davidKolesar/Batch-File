@@ -1,9 +1,9 @@
 @echo off
-title Scrub Tools
+title System Information
 
 cls
 echo ***********************************************************
-echo Generate System Information
+echo Collect Computer System Information
 echo David Kolesar
 echo ***********************************************************
 :Program Options
@@ -41,7 +41,6 @@ echo %TIME%
 goto :Program Options
 
 :Option 2
-
 echo Computer Name :
 hostname
 echo System Information:
@@ -50,7 +49,6 @@ echo Network Properties :
 ipconfig /all
 echo Network Connections : 
 netstat
-
 echo Date:
 echo %DATE%
 echo Time: 
