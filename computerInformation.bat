@@ -6,6 +6,7 @@ echo ***********************************************************
 echo Generate System Information
 echo David Kolesar
 echo ***********************************************************
+:Program Options
 echo .  
 echo Select Option By Number:
 echo.
@@ -28,13 +29,13 @@ systeminfo
 echo Network Properties : 
 ipconfig /all
 echo Date:
-date
+echo %DATE%
 echo Time: 
-time
+echo %TIME%
 )
-goto :Start
+goto :Program Options
 
 
 :Exit
-echo Goodbye. 
+echo Goodbye
 exit
